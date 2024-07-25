@@ -16,7 +16,9 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-  const humanChoice = prompt("Choose between guu, choki or paa. Jakenpon!");
+  const humanChoice = prompt(
+    "Choose between guu, choki or paa. Jakenpon!"
+  ).toLowerCase();
   if (humanChoice == "guu" || humanChoice == "choki" || humanChoice == "paa") {
     return humanChoice;
   } else {
