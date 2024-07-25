@@ -11,3 +11,12 @@ function getComputerChoice() {
       break;
   }
 }
+
+function getHumanChoice() {
+  const humanChoice = prompt("Choose between guu, choki or paa. Jakenpon!");
+  if (humanChoice == "guu" || humanChoice == "choki" || humanChoice == "paa") {
+    return humanChoice;
+  } else {
+    console.log("Invalid option!");
+  }
+}
