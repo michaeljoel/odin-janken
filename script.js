@@ -55,11 +55,19 @@ function playGame() {
     let humanSelection = getHumanChoice();
     let computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
-    console.log("Your Score: ", humanScore, " Computer Score: ", computerScore);
+    console.log(
+      "Your Score: ",
+      humanScore,
+      " Computer's Score: ",
+      computerScore
+    );
   }
+
   if (humanScore > computerScore) {
     console.log("You won the game!");
   } else {
     console.log("You lost!");
   }
 }
+
+playGame();
